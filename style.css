@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+.logo-mario-luigi {
+    height: 500px;
+}
+
+
+
+
+.chame-aqui {
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.conjunto-caixa-chame-aqui {
+    width: 40%;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.whatsapp {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+}
+
+.logo-cabeçalho {
+    height: 60px;
+}
+
+.cabeçalho a {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cabeçalho a:hover {
+    color: red;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.caixa-mae button:hover {
+    color: black;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: rgb(6, 214, 6);
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: rgb(6, 214, 6);
+
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.77) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+.mensagem-enviar {
+    color: white;
+    background-color: rgb(6, 214, 6);
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+
+}
+
+@media(max-width: 1100px) {
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .conjunto-caixa-chame-aqui {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-mario-luigi {
+        width: 80vw;
+        height: auto;
+    }
+
+    .cabeçalho {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cabeçalho a {
+        font-size: 20px;
+
+
+    }
+
+    .logo-cabeçalho {
+        display: none;
+    }
+
+    .mario-luigi-encanador {
+        height: 500px;
+    }
+
+    
+
+    
+
+
+
+}
+
